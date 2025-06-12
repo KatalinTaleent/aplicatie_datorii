@@ -15,7 +15,7 @@ def initializeaza_fisier():
 
 #aceasta functie permite citirea unei datorii de la tastatura, actualizand astfel fisierul
 def citeste_datorie():
-    nume_datorie = input("Introduceti numele datoriei:", end = "")
-    valoare_datorie = float(input("Introduceti valoarea in bani a datoriei:", end = ""))
-    data_datorie = input("Cand a aparut aceasta datorie?", end = "")
+    nume_datorie = input("Introduceti numele datoriei: ")
+    valoare_datorie = float(input("Introduceti valoarea in bani a datoriei: "))
+    data_datorie = input("Cand a aparut aceasta datorie?")
 #TODO
