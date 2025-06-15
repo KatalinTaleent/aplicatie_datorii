@@ -11,7 +11,7 @@
     fisierul in care apar datoriile este ,,datorii.txt'' """
 
 # deschidem fisierul ,,datorii.txt''
-    fisier = open('datorii.txt', 'w')
+fisier = open('datorii.txt', 'w')
 
 # aceasta functie permite citirea unei datorii de la tastatura, obtinand date pentru actualizarea fisierului
 def citeste_datorie():
@@ -33,3 +33,13 @@ def citeste_datorie():
 def afisare_datorii():
     for line in fisier:
         print(line)
+
+def adaugare_datorii():
+    detalii_datorie = citeste_datorie()
+    for detaliu in detalii_datorie:
+        fisier.write(str(detaliu))
+
+def stergere_datorii_achitate():
+    for line in fisier:
+        if "Da" in line:
+            fisier.
